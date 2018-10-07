@@ -2,18 +2,9 @@ language: node_js
 dist: trusty
 sudo: required
 node_js: stable
-cache:
-  directories:
-  - .psc-package
-  - output
-env:
-  - PATH=$HOME/purescript:$HOME/psc-package:$PATH
 install:
   - npm install
-  - PSC_PACKAGE_TAG=v0.4.1
-  - wget -O $HOME/psc-package.tar.gz https://github.com/purescript/psc-package/releases/download/$PSC_PACKAGE_TAG/linux64.tar.gz
-  - tar -xvf $HOME/psc-package.tar.gz -C $HOME/
-  - chmod a+x $HOME/psc-package
-  - psc-package build
+  - npm run setup
 script:
   - npm run build
+  - npm run test

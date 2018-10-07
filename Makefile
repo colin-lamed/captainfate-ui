@@ -3,6 +3,7 @@ all: build
 setup:
 	set -e
 	npm install
+	npm run setup
 
 build: setup
 	npm run build
@@ -23,10 +24,6 @@ zip-src:
 	git archive -o captainfate-ps.zip HEAD
 	# update with .git
 	zip -b /tmp captainfate-ps.zip -r .git/
-
-
-run:
-	pulp --psc-package run
 
 runweb:
 	firefox html/index.html
