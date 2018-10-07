@@ -1,0 +1,31 @@
+{
+  "name": "captain-fate",
+  "set": "psc-0.12.0-20180901",
+  "source": "https://github.com/purescript/package-sets.git",
+  "depends": [
+    "prelude",
+    "avar",
+    "aff",
+    "assert",
+    "canvas",
+    "console",
+    "debug",
+    "exists",
+    "free",
+    "freet",
+    "foreign",
+    "functors",
+    "lists",
+    "node-readline",
+    "now",
+    "parsing",
+    "profunctor-lenses",
+    "random",
+    "react-dom",
+    "refs",
+    "web-touchevents",
+    "transformers",
+    "pairing",
+    "web-html"
+  ]
+}

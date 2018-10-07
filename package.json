@@ -1,0 +1,17 @@
+{
+  "name": "captainfate-ui",
+  "version": "0.1.0",
+  "description": "Captain Fate UI (Purescript)",
+  "main": "",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf dist && rimraf output && rimraf .pulp-cache",
+    "build": "pulp --psc-package browserify --to public/js/Main.js",
+    "test": "pulp --psc-package test"
+  },
+  "devDependencies": {
+    "pulp": "^12.3.0",
+    "purescript": "^0.12.0",
+    "rimraf": "^2.6.1"
+  }
+}
